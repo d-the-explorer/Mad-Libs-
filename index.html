@@ -10,21 +10,40 @@
     <script>
         let width = 900
         let height = 1000
+        let g;
+        let madlibling1;
+        let input1;
+        let input2; 
         function setup(){
             createCanvas(width,height);
             background(200);
+            
             textAlign(CENTER);
             text('Mad-Libs',width/2,30);
             textAlign(LEFT);
             text('Adjective 1:', 80,120);
-            input = createInput('');
-            input.position(80, 140);
+            input1 = createInput('');
+            input1.position(80, 140);
+
+
             text('Adjective 2:',80, 200);
             textAlign(LEFT);
-            input = createInput('');
-            input.position(80, 220);
-            let button = createButton('NEXT');
-            button.position(width/2, height/2);
+            input2 = createInput('');
+            input2.position(80, 220);
+            let funky_button = createButton('NEXT');
+            funky_button.position(width/2, height/2);
+
+             // Call repaint() when the button is pressed.
+            funky_button.mousePressed(repaint);
+
+}
+
+// Change the background color.
+function repaint() {
+  let madlibling1 = input1.value()
+  textSize(50);
+  textAlign(CENTER, CENTER);
+  text(madlibling1, width / 2, height-700);
 
 ;        }
         </script>

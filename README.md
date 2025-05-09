@@ -1,4 +1,7 @@
 # Mad-Libs-
+## Homework 5/9/25
+- Second input to appear
+- Begin writing original MadLib 
 
 ## Homework 5/2/25
  - Explore this example: https://editor.p5js.org/justjiffy/sketches/odqjC-VNb
@@ -7,3 +10,4 @@
 ## Homework 4/18/25
 - Add labels using the text() function for each input
 - Add two inputs, for the two adjectives in the opening sentence of the madlibs game
+646ytg0
