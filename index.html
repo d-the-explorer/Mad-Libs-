@@ -14,19 +14,21 @@
         let madlibling1;
         let input1;
         let input2; 
+        let madlibling2;
+        let story;
         function setup(){
             createCanvas(width,height);
             background(200);
             
             textAlign(CENTER);
-            text('Mad-Libs',width/2,30);
+            text('🚗 Road Trip Madness 🚗',width/2,30);
             textAlign(LEFT);
-            text('Adjective 1:', 80,120);
+            text('Place1:', 80,120);
             input1 = createInput('');
             input1.position(80, 140);
 
 
-            text('Adjective 2:',80, 200);
+            text('Place2:',80, 200);
             textAlign(LEFT);
             input2 = createInput('');
             input2.position(80, 220);
@@ -40,12 +42,17 @@
 
 // Change the background color.
 function repaint() {
-  let madlibling1 = input1.value()
-  textSize(50);
-  textAlign(CENTER, CENTER);
-  text(madlibling1, width / 2, height-700);
+    background(200);
+  madlibling1 = input1.value()
+  textSize(20);
+  textWrap(WORD);
+  madlibling2 = input2.value();
+  story= "Last summer, my best friend and I decided to take a road trip from " + madlibling1 +  " to " + madlibling2 
+  text(story, 0, height-700,1000);
+   
+}
 
-;        }
+;      
         </script>
 </body>
 </html>
